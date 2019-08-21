@@ -138,8 +138,7 @@ services:
     ports:
       - "8088:8088"
     volumes:
-      - /Users/victor/Desktop/mandiri-ksql-pot/ksql-properties/ksql.properties:/etc/ksql/ksql-conf.properties
-      - /Users/victor/Desktop/mandiri-ksql-pot/ksql-udf-jar/smsudf-1.0-SNAPSHOT-jar-with-dependencies.jar:/etc/ksql-server/ext/smsudf-1.0-SNAPSHOT-jar-with-dependencies.jar
+      - /Users/victor/Desktop/mandiri-ksql-pot/ksql-udf-jar:/etc/ksql-server/ext
     environment:
       KSQL_CUB_KAFKA_TIMEOUT: 300
       KSQL_CONFIG_DIR: "/etc/ksql"
